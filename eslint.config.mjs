@@ -38,7 +38,6 @@ export default defineConfig(
         'react/jsx-indent': ['error', 2],
         'react/jsx-indent-props': ['error', 2],
         'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'multiline' }],
-        'react/jsx-no-bind': ['error', { ignoreRefs: true }],
         'react/jsx-no-duplicate-props': 'error',
         'react/jsx-no-undef': 'error',
         'react/jsx-pascal-case': 'error',

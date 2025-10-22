@@ -1,16 +1,16 @@
 import '@mantine/core/styles.css';
 
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
-import { theme } from '../theme';
+import {ColorSchemeScript, MantineProvider} from '@mantine/core';
+import {theme} from '../theme';
 
 export const parameters = {
   layout: 'fullscreen',
   options: {
     showPanel: false,
     // @ts-expect-error – storybook throws build error for (a: any, b: any)
-    storySort: (a, b) => a.title.localeCompare(b.title, undefined, { numeric: true }),
+    storySort: (a, b) => a.title.localeCompare(b.title, undefined, {numeric: true}),
   },
-  backgrounds: { disable: true },
+  backgrounds: {disable: true},
 };
 
 export const globalTypes = {
@@ -21,8 +21,8 @@ export const globalTypes = {
     toolbar: {
       icon: 'mirror',
       items: [
-        { value: 'light', title: 'Light' },
-        { value: 'dark', title: 'Dark' },
+        {value: 'light', title: 'Light'},
+        {value: 'dark', title: 'Dark'},
       ],
     },
   },
