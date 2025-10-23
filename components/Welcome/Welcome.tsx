@@ -1,10 +1,11 @@
 import {Text, Title} from '@mantine/core';
-import classes from './Welcome.module.css';
 
 export function Welcome() {
   return (
-    <>
-      <Title className={classes.title} ta={'center'} mt={100}>
+      <Title 
+        className={'text-black text-6xl md:text-[100px] bg-transparent'}
+        ta={'center'}
+      >
         Welcome to{' '}
         <Text 
           inherit 
@@ -15,6 +16,5 @@ export function Welcome() {
           Playground
         </Text>
       </Title>
-    </>
   );
 }
